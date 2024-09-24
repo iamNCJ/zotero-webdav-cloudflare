@@ -8,8 +8,9 @@ This is a simple serverless WebDAV server that can be deployed to Cloudflare Wor
 > 1. I built the code with Claude, hence there might be some unnoticed bugs, although it has worked well so far.
 > 2. This WebDAV server is not designed to be a full-featured WebDAV server. It is designed to be used with Zotero only.
 > 3. Known issues: 
->       i. `PROPFIND` will timeout on free tier Cloudflare Workers. Hence only first 10 items will be listed (but should still work with Zotero).
->      ii. A single user use case is assumed. Concurrent modification to the same file may cause issues.
+>   - `PROPFIND` will timeout on free tier Cloudflare Workers. Hence only first 10 items will be listed (but should still work with Zotero).
+>   - A single user use case is assumed. Concurrent modification to the same file may cause issues.
+>   - The maximum file size is limited to 100MB (Cloudflare Workers limit).
 
 ## Usage
 1. Deploy the code to Cloudflare Workers.

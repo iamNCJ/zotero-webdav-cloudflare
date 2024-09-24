@@ -1,5 +1,5 @@
 # Zotero WebDAV Cloudflare Serverless
- A Serverless WebDAV Server on Cloudflare for Zetero Library Syncing
+ A Serverless WebDAV Server on Cloudflare for Zotero Library Syncing
 
 ## Introduction
 This is a simple serverless WebDAV server that can be deployed to Cloudflare Workers with data stored in Cloudflare R2 Object Storage. It is designed to be used with Zotero for syncing your library across devices.
